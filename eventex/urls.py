@@ -18,6 +18,7 @@ from django.contrib import admin
 import eventex.core.views
 
 urlpatterns = [
-    url('', eventex.core.views.home),
+    url('^$', eventex.core.views.home),
     url(r'^admin/', include(admin.site.urls)),
+
 ]
